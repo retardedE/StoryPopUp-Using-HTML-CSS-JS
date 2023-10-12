@@ -1,0 +1,114 @@
+@font-face {
+    font-family: MainFont ;
+    src: url(assets/fonts/Poppins-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: MainFont;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000070;
+}
+i{
+    cursor: pointer;
+}
+.storyBox{
+    position: relative;
+    height: 600px;
+    width: 300px;
+}
+.storyBox #contentImg{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    background-color: black;
+}
+.storyBox .storyContent{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* gap: 500px; */
+}
+.storyBoxHeader{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5px 5px;
+}
+.storyLoader{
+    width: 100%;
+}
+.progressBar {
+    background-color: #fff;
+    height: 4px;
+    width: 290px;
+    animation: grow 15s linear infinite;
+    transform-origin: left;
+  }
+  
+@keyframes grow {
+    0% {
+      transform: scaleX(0);
+    }
+}
+.lastRow i{
+    color: white;
+}
+.lastRow{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.userIntels{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.userIntels p{
+    color: white;
+    font-size: 12px;
+}
+.lastRow img{
+    height: 30px;
+    border-radius: 50%;
+}
+.storyBox .storyBoxFooter i{
+    margin-top: 7px;
+    color: #fff;
+}
+.storyBox .storyBoxFooter{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+}
+.storyBox .storyBoxFooter .footerReply{
+    width: 80%;
+}
+.storyBox .storyBoxFooter .footerReply .replyInput{
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    width: 95%;
+    padding: 4px 10px;
+    outline: none;
+    color: #fff;
+}
+.storyBox .storyBoxFooter .footerIcons{
+    width: 20%;
+} 
